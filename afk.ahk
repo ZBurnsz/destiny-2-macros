@@ -30,7 +30,7 @@ Loop
 	MouseMove, X, Y
 	MouseMove, X - 500, Y, 100
 	Sleep, 500
-	Click, 1
+	Click, 1s	
 	Sleep, 500
 	MouseMove, X, Y
 	Sleep, 500
@@ -40,6 +40,10 @@ Loop
 	Sleep, 1000
 }
 
+return
+
+8::
+pause
 return
 
 0::

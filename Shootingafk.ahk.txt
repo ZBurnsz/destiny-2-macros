@@ -1,0 +1,32 @@
+; Set the number of clicks and intervals
+
+
+
+!4::
+{
+clicks := 14
+click_interval := 3000 ; 3 seconds in milliseconds
+pause_interval := 5000 ; 5 seconds in milliseconds
+
+Loop {
+    ; Click left mouse button
+    Click
+
+    ; Decrement the click count
+    clicks--
+
+    ; Exit the loop if all clicks are done
+    if (clicks <= 0) {
+        Sleep, %pause_interval%
+        clicks := 14 ; Reset the click count
+    }
+
+    ; Wait for the click interval
+    Sleep, %click_interval%
+}
+}
+return
+
+8::
+pause
+return
