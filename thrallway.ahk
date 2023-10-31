@@ -3,8 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-
-Numpad0::
+!5::
 Loop
 {
   Click
@@ -19,7 +18,7 @@ Loop
 }
 Return
 
-0::
+!5::
 Reload
 Return
 
